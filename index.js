@@ -285,10 +285,11 @@ function showData(delData){
 
 
 
-data = JSON.parse(localStorage.getItem("data"));
+data = JSON.parse(localStorage.getItem("data")) || [];
 
 
 let tbody = document.querySelector("#tbody");
+
 
 data.map((ele) => {
     
